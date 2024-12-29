@@ -1,0 +1,4 @@
+title_index.faiss filter=lfs diff=lfs merge=lfs -text
+author_index.faiss filter=lfs diff=lfs merge=lfs -text
+author_map.pkl filter=lfs diff=lfs merge=lfs -text
+title_map.pkl filter=lfs diff=lfs merge=lfs -text
