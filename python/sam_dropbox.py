@@ -5,7 +5,7 @@ import dropbox
 import os
 
 # Initialize Dropbox client
-dbx = dropbox.Dropbox('sl.CC5zyXwoT8pVtdeIQyk3hV-2Wrer--CvZbnM9N2U2ZOM0SPFF079J_FplkEZ4WiIm-YEBUIMc7Q4TZqobfa_ZDgmcmIqDJfLpoVWOUqDuuSmxWnNivG_VW4ey5tgwc-cQIGn6rv10h7D')
+dbx = dropbox.Dropbox('') # Insert access token here.
 
 # Check if the authentication works
 dbx.users_get_current_account()
