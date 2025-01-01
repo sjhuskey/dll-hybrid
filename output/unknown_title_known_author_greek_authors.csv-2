@@ -1,1 +1,1 @@
-"author","title","deterministic_author","matched_title_deterministic","fuzzy_author","matched_title_fuzzy","fuzzy_title_score","distilbert_author","language","language_confidence"
+"author","normalized_author","title","deterministic_author","matched_title_deterministic","fuzzy_author","matched_title_fuzzy","fuzzy_title_score","distilbert_author","language","language_confidence"
