@@ -1,11 +1,17 @@
 '''
-Helper functions for working in Colab, to upload large files to Dropbox
+Title: sam_dropbox.py
+Author: Samuel J. Huskey (with assistance from Chat GPT 4o)
+
+Purpose: Helper functions for working in Colab, to upload large files to Dropbox
+
+Note: Needs an access token from the Dropbox App Console
 '''
+
 import dropbox
 import os
 
 # Initialize Dropbox client
-dbx = dropbox.Dropbox('') # Insert access token here.
+dbx = dropbox.Dropbox('') # Insert access token from Dropbox App Console here
 
 # Check if the authentication works
 dbx.users_get_current_account()
@@ -59,7 +65,6 @@ def upload_directory_to_dropbox(local_dir_path, dropbox_dir_path):
                 with open(local_file_path, "rb") as f:
                     dbx.files_upload(f.read(), dropbox_file_path, mode=dropbox.files.WriteMode.overwrite)
 
-# Modified save function to save model checkpoints directly to Dropbox
 def save_model_to_dropbox(model, output_dir, dropbox_dir):
     # Save the model locally first
     model.save_pretrained(output_dir)

@@ -1,8 +1,17 @@
+'''
+title: utilities.py
+author: Samuel J. Huskey (with assistance from Chat-GPT 4o)
+
+Purpose: Helper functions for use in multiple Jupyter notebooks 
+in this repository
+'''
+
 import re
 import unicodedata
 
 def normalize_author_name(name):
     """Normalize author names for consistent matching."""
+    # Decompose Unicode characters
     name = unicodedata.normalize('NFKD', name).encode('ascii', 'ignore').decode('utf-8')
     # Convert to lowercase, strip whitespace, and remove non-alphanumeric characters (except spaces)
     normalized_name = re.sub(r"[^\w\s]", "", name.lower().strip())

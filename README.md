@@ -4,7 +4,20 @@ This is a git repo for a hybrid approach to processing metadata records for edit
 
 Specifically, this hybrid approach combines deterministic matching, fuzzy matching, and deep learning approaches to processing incoming bibliographical metadata. The file `python/hybrid.ipynb` implements these approaches.
 
-## Structure
+## Disclosure
+
+Much of the code in this repository was written and/or modified by Samuel J. Huskey. The following sources have influenced practically every line:
+
+- François Chollet, _Deep Learning with Python_, Second Edition (Manning, 2021)
+- Patrick J. Burns, Getting Started with LatinCy (2024): <https://diyclassics.github.io/latincy-book/>
+- Chat GPT 4o: <https://chatgpt.com/>
+- Gemini on Colab: <https://gemini.google.com/>
+- HuggingFace API and Tutorials: <https://huggingface.co/>
+- PyTorch Tutorials: <https://pytorch.org/>
+
+Indeed, this entire project is an example of how AI can accelerate digital scholarship, since most of it emerged from conversations with chatbots, particularly Chat GPT 4o.
+
+## Structure of this Repository
 
 ### data
 
@@ -29,6 +42,8 @@ This directory contains the Jupyter notebooks and Python files used in working w
 The file `python/fine_tune_distilmbert.ipynb` was used to fine-tune the [DistilBERT Multilingual Cased](https://huggingface.co/distilbert/distilbert-base-multilingual-cased) model to create a model for matching the names of authors of Latin texts with their Digital Latin Library ID: [sjhuskey/distilbert_multilingual_cased_latin_author_identifier](<https://huggingface.co/sjhuskey/distilbert_multilingual_cased_latin_author_identifier>).
 
 The file `python/fine_tune_distilmbert_greek.ipynb` was used to fine-tune the [DistilBERT Multilingual Cased](https://huggingface.co/distilbert/distilbert-base-multilingual-cased) model to create a model for labeling names of authors as "Greek" or "Latin", according to the language in which they primarily wrote: [sjhuskey/distilbert_multilingual_cased_greek_latin_classifier](<https://huggingface.co/sjhuskey/distilbert_multilingual_cased_greek_latin_classifier>).
+
+The file `python/analysis-5.ipynb` is the most recent and complete file for analyzing the output of `python/hybrid.ipynb`, the main notebook for running the models to match authors and titles.
 
 ### vector_stores
 
