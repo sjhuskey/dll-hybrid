@@ -1,155 +1,31 @@
-aiohappyeyeballs==2.4.4
-aiohttp==3.11.10
-aiosignal==1.2.0
-annotated-types==0.7.0
-ansi2html==1.9.1
-appnope==0.1.2
-arrow==1.3.0
-asttokens==2.0.5
-async-timeout==5.0.1
-attrs==24.3.0
-beautifulsoup4==4.12.3
-blinker==1.6.2
-blis==0.7.11
-Bottleneck==1.4.2
-Brotli==1.0.9
-catalogue==2.0.10
-certifi==2024.12.14
-charset-normalizer==3.3.2
-click==8.1.7
-cloudpathlib==0.20.0
-codecarbon==2.2.2
-colorama==0.4.6
-comm==0.2.1
-confection==0.1.5
-contourpy==1.3.1
-cycler==0.12.1
-cymem==2.0.10
-dash==2.14.2
-dash-bootstrap-components==1.6.0
-dash-core-components==2.0.0
-dash-html-components==2.0.0
-dash-table==5.0.0
-datasets==2.19.1
-debugpy==1.6.7
-decorator==5.1.1
-dill==0.3.8
-exceptiongroup==1.2.0
-executing==0.8.3
-faiss==1.9.0
-filelock==3.13.1
-fire==0.7.0
-Flask==3.0.3
-Flask-Compress==1.13
-fonttools==4.55.3
-frozenlist==1.5.0
-fsspec==2024.3.1
-fuzzywuzzy==0.18.0
-gmpy2==2.1.2
-huggingface_hub==0.26.5
-idna==3.7
-importlib_metadata==8.5.0
-IProgress==0.4
-ipykernel==6.29.5
-ipython==8.30.0
-ipywidgets==8.1.5
-itsdangerous==2.2.0
-jedi==0.19.2
-Jinja2==3.1.4
-joblib==1.4.2
-jupyter_client==8.6.0
-jupyter_core==5.7.2
-jupyterlab_widgets==3.0.13
-kiwisolver==1.4.7
-la_core_web_lg==3.7.7
-langcodes==3.5.0
-language_data==1.3.0
-marisa-trie==1.2.1
-markdown-it-py==3.0.0
-MarkupSafe==2.1.3
-matplotlib==3.10.0
-matplotlib-inline==0.1.6
-mdurl==0.1.2
-mpmath==1.3.0
-multidict==6.1.0
-multiprocess==0.70.15
-munkres==1.1.4
-murmurhash==1.0.11
-nest-asyncio==1.6.0
-networkx==3.3
-numexpr==2.10.1
-numpy==1.26.4
-nvidia-ml-py==12.560.30
-packaging==24.2
-pandas==2.2.3
-parso==0.8.4
-pexpect==4.8.0
-pillow==11.0.0
-pip==24.2
-platformdirs==3.10.0
-plotly==5.24.1
-preshed==3.0.9
-prompt-toolkit==3.0.43
-propcache==0.2.0
-psutil==5.9.0
-ptyprocess==0.7.0
-pure-eval==0.2.2
-py-cpuinfo==9.0.0
-pyarrow==17.0.0
-pydantic==2.10.4
-pydantic_core==2.27.2
-Pygments==2.15.1
-pynvml==12.0.0
-pyparsing==3.2.0
-PySocks==1.7.1
-python-dateutil==2.9.0.post0
-python-Levenshtein==0.12.2
-pytz==2024.1
-PyYAML==6.0.2
-pyzmq==26.2.0
-RapidFuzz==3.11.0
-regex==2024.9.11
-requests==2.32.3
-retrying==1.3.3
-rich==13.9.4
-safetensors==0.4.5
-scikit-learn==1.5.2
-scipy==1.14.1
-sentence-transformers==3.3.1
-setuptools==75.1.0
-shellingham==1.5.4
-six==1.16.0
-smart-open==7.1.0
-soupsieve==2.5
-spacy==3.7.5
-spacy-legacy==3.0.12
-spacy-loggers==1.0.5
-spacy_lookups_data==1.0.5
-srsly==2.5.0
-stack-data==0.2.0
-sympy==1.13.3
-tenacity==9.0.0
-termcolor==2.1.0
-thinc==8.2.5
-threadpoolctl==3.5.0
-tokenizers==0.19.1
-torch==2.3.1
-tornado==6.4.2
-tqdm==4.67.1
-traitlets==5.14.3
-transformers==4.44.1
-typer==0.15.1
-typing_extensions==4.12.2
-tzdata==2023.3
-unicodedata2==15.1.0
-urllib3==2.2.3
-wasabi==1.1.3
-wcwidth==0.2.5
-weasel==0.4.1
-Werkzeug==3.0.6
-wheel==0.44.0
-widgetsnbextension==4.0.13
-wrapt==1.17.0
-xxhash==2.0.2
-yarl==1.18.0
-zipp==3.21.0
+appnope @ file:///Users/builder/ci_310/appnope_1642500616005/work
+asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+comm @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_aef2nlxc2o/croot/comm_1709322866518/work
+debugpy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_a5sm9dmihj/croot/debugpy_1736267550163/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+exceptiongroup @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_f147j11jio/croot/exceptiongroup_1706031400682/work
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+ipykernel @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6757k8pgf8/croot/ipykernel_1737662465787/work
+ipython @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_f6ex7m1blz/croot/ipython_1734550232322/work
+jedi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b78vrox9dk/croot/jedi_1733987406492/work
+jupyter_client @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_e4fuoqieve/croot/jupyter_client_1737570976188/work
+jupyter_core @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_80l8bw91xp/croot/jupyter_core_1718818299834/work
+matplotlib-inline @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_9ddl71oqte/croots/recipe/matplotlib-inline_1662014471815/work
+nest-asyncio @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_c44_atq5c1/croot/nest-asyncio_1708532677863/work
+packaging @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_15t4xe1fp0/croot/packaging_1734472125760/work
+parso @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ffagjb_lok/croot/parso_1733963312676/work
+pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+platformdirs @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_640usff2p5/croot/platformdirs_1692205656061/work
+prompt-toolkit @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4d8kk9w3ed/croot/prompt-toolkit_1704404354789/work
+psutil @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ed123tcwwq/croot/psutil_1736369384437/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+Pygments @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_cflayrfqsi/croot/pygments_1684279981084/work
+python-dateutil @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_efk5_uakg8/croot/python-dateutil_1716495742183/work
+pyzmq @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_728n2oj6m9/croot/pyzmq_1734709561835/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tornado @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_a2c0voe1m0/croot/tornado_1733960496093/work
+traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_f49losghmg/croot/traitlets_1718227069025/work
+typing_extensions @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6dn2s8ln8g/croot/typing_extensions_1734714858107/work
+wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work

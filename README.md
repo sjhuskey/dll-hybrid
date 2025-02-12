@@ -15,7 +15,7 @@ Much of the code in this repository was written and/or modified by Samuel J. Hus
 - HuggingFace API and Tutorials: <https://huggingface.co/>
 - PyTorch Tutorials: <https://pytorch.org/>
 
-Indeed, this entire project is an example of how AI can accelerate digital scholarship, since most of it emerged from conversations with chatbots, particularly Chat GPT 4o.
+Indeed, this entire project is an example of how AI can accelerate digital scholarship, since most of it emerged from conversations with chatbots, particularly Chat GPT 4o, but also GitHub's Copilot and Google's Gemini.
 
 ## Structure of this Repository
 
@@ -31,6 +31,8 @@ The most important files in `data` are:
 - `1908698974-1722799169.txt`: The original file downloaded from HathiTrust.
 - `works_db.csv`: Used for mapping works to their authors.
 
+The `greek_cleanup` directory contains files used to create the Greek part of the dataset for the Greek-Latin model.
+
 ### output
 
 The `output` directory contains files generated during analysis.
@@ -39,11 +41,13 @@ The `output` directory contains files generated during analysis.
 
 This directory contains the Jupyter notebooks and Python files used in working with and analyzing the data.
 
-The file `python/fine_tune_distilmbert.ipynb` was used to fine-tune the [DistilBERT Multilingual Cased](https://huggingface.co/distilbert/distilbert-base-multilingual-cased) model to create a model for matching the names of authors of Latin texts with their Digital Latin Library ID: [sjhuskey/distilbert_multilingual_cased_latin_author_identifier](<https://huggingface.co/sjhuskey/distilbert_multilingual_cased_latin_author_identifier>).
+The file `python/fine_tune_distilmbert_author.ipynb` was used to fine-tune the [DistilBERT Multilingual Cased](https://huggingface.co/distilbert/distilbert-base-multilingual-cased) model to create a model for matching the names of authors of Latin texts with their Digital Latin Library ID: [sjhuskey/distilbert_multilingual_cased_latin_author_identifier](<https://huggingface.co/sjhuskey/distilbert_multilingual_cased_latin_author_identifier>).
 
 The file `python/fine_tune_distilmbert_greek.ipynb` was used to fine-tune the [DistilBERT Multilingual Cased](https://huggingface.co/distilbert/distilbert-base-multilingual-cased) model to create a model for labeling names of authors as "Greek" or "Latin", according to the language in which they primarily wrote: [sjhuskey/distilbert_multilingual_cased_greek_latin_classifier](<https://huggingface.co/sjhuskey/distilbert_multilingual_cased_greek_latin_classifier>).
 
-The file `python/analysis-5.ipynb` is the most recent and complete file for analyzing the output of `python/hybrid.ipynb`, the main notebook for running the models to match authors and titles.
+The file `inference_testing.ipynb` is the most recent and complete file for analyzing the output of `python/hybrid.ipynb`, the main notebook for running the models to match authors and titles. Older analysis files are in the aptly named `old_analyses`.🙂
+
+The `cleaning_exploration` directory contains files used to, well, clean the data and explore it.🧐
 
 ### vector_stores
 
@@ -56,71 +60,26 @@ The vector stores and their mapping files are in the directory `vector_stores`. 
 ### Directory Tree
 
 ```bash
-dll-hybrid
-|_vector_stores
-  |_author_map.pkl
-  |_title_index.faiss
-  |_author_index.faiss
-  |_title_map.pkl
-|_requirements.txt
-|_python
-  |_vector_stores.ipynb
-  |_prepare-data-for-fine-tuning.ipynb
-  |___pycache__
-    |_utilities.cpython-310.pyc
-  |_fine_tune_distilmbert.ipynb
-  |_emissions.csv
-  |_data-preparation.ipynb
-  |_sam_dropbox.py
-  |_analysis-2.ipynb
-  |_hybrid.ipynb
-  |_prepare_hathi.ipynb
-  |_fine_tune_distilmbert_greek.ipynb
-  |_emissions.ipynb
-  |_utilities.py
-  |_greek-data-prep.ipynb
-  |_analysis.ipynb
-|_output
-  |_grouped_distilbert_author_matches.csv
-  |_grouped_distilbert_author_matches_90_100.csv
-  |_unmatched_authors_fuzzy.txt
-  |_unique_authors_fuzzy_scores.csv
-  |_unique_authors_fuzzy_scores_2.csv
-  |_unique_authors_fuzzy_scores_3.csv
-  |_unique_authors_with_stdev.csv
-  |_fuzzy-distilbert-comparison-bar-graph.png
-|_README.md
-|_data
-  |_works_db.csv
-  |_output_df.csv
-  |_classified_metadata.csv
-  |_unknown_title_known_author_classified_metadata.csv
-  |_authors.csv
-  |_1908698974-1722799169.txt
-  |_unknown_title_known_author_greek_authors.csv
-  |_deterministic_author.csv
-  |_unknown_title_known_author_latin_authors.csv
-  |_unknown_title_known_authors.csv
-  |_deterministic_author_2.csv
-  |_titles.csv
-  |_distilbert-data.csv
-  |_authors_db.csv
-  |_processed_unknowns_matches.csv
-  |_greek_cleanup
-    |_sorted_variants.csv
-    |_deduped_greek_with_authorized_and_variants.csv
-    |_sorted_df_by_variants.csv
-    |_sorted_df_by_url.csv
-    |_greek-authors.csv
-    |_greek.csv
-    |_exploded_variants.csv
-    |_sorted_df_by_name.csv
-    |_viaf_greek_variants.csv
-  |_works.csv
-  |_latin_authors.csv
-  |_greek_authors.csv
-  |_deduped_greek_and_latin.csv
-  |_hathi.csv
-  |_hathi2.csv
-  |_unknown_title_known_author_output.csv
+|-- LICENSE
+|-- README.md
+|-- data
+|-- output
+|-- python
+  |-- cleaning_exploration
+    |-- greek_cleanup
+    |-- input
+    |-- output
+  |-- data-preparation.ipynb
+  |-- dll_rag.ipynb
+  |-- fine_tune_distilmbert.ipynb
+  |-- fine_tune_distilmbert_greek.ipynb
+  |-- greek-data-prep.ipynb
+  |-- hybrid.ipynb
+  |-- inference-testing.ipynb
+  |-- llama_rag.ipynb
+  |-- old_analyses
+  |-- sam_dropbox.py
+  |-- utilities.py
+|-- requirements.txt
+|-- vector_stores
 ```
