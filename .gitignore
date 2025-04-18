@@ -3,6 +3,10 @@ Icon?
 .dropbox
 .ipynb_checkpoints/
 
+# Ignore model directory
+distilbert-finetuned/
+new_distilbert/
+
 # LibreOffice locks
 .~lock.*#
 *~
